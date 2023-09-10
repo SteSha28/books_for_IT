@@ -12,9 +12,10 @@ $(function() {
     
         var typeCharacter = function() {
           if (currentIndex < text.length) {
-            if (text[currentIndex] == "<" || text[currentIndex] == ">" || text[currentIndex] == "/") {
+            if (text[currentIndex] == "<" || text[currentIndex] == ">"||text[currentIndex] == "/") {
               exit_str += "<font color=\"#808080\">" + text[currentIndex] + "</font>";
-            } else {
+            } 
+            else {
               exit_str += "<font color=\"#01539d\">" + text[currentIndex] + "</font>";
             }
             elem.innerHTML = exit_str;
